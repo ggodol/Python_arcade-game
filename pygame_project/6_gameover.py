@@ -227,6 +227,9 @@ while running:
                         "to_y":-6, # y축 이동방향,
                         "init_spd_y": ball_speed_y[ball_img_idx + 1]}) # y 최초 속도
                 break
+        else: # 계속 게임을 진행
+            continue # 안쪽 for문 조건이 맞지 않으면 continue. 바깥 for 문 계속 수행
+        break # 안쪽 for 문에서 break 를 만나면 여기로 진입 가능. 2중 for 문을 한 번에 탈출
     
     # 충돌된 공 or 무기 없애기
     if ball_to_remove > -1:
